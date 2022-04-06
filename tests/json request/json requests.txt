@@ -1,0 +1,66 @@
+User:-
+
+Post:
+http://127.0.0.1:8000/api/users
+{
+	"name":"admin",
+	"email":"admin@gmail.com",
+	"password":123456
+}
+--------
+Patch:
+http://127.0.0.1:8000/api/users
+{
+	"id":1,
+	"name":"test1"
+}
+-----------
+Get:
+http://127.0.0.1:8000/api/users
+serach by id if you want
+{
+"ids":"1"
+}
+
+------------------------------------------------------------------------------
+Auth:-
+
+Post:
+http://127.0.0.1:8000/oauth/token
+
+you have to change clientId and clientSecret
+{
+	"grant_type": "password",
+	"client_id": "95fe1013-582d-46a8-8a50-ad810e846f94",
+	"client_secret": "CXcboe1YEmbB3te3FwVMlHDp903tE1gHejYnFsnc",
+	"username": "yahya4@gmail.com",
+	"password": "123456",
+	"scope": ""
+}
+
+------------------------------------------------------------------------------
+CashIn:
+
+Post:
+http://127.0.0.1:8000/api/cashIn
+
+{
+	"cardId":2,
+	"name":"cash in",
+	"amount":"100",
+	"description":"this for test"
+}
+------------------------------------------------------------------------------
+Payment:
+
+Patch:
+http://127.0.0.1:8000/api/payment
+
+{
+	"cardCode":"card-02",
+	"gameId":1
+}
+------------------------------------------------------------------------------
+add and edit cards and games from dashboard
+------------------------------------------------------------------------------
+
